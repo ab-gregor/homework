@@ -1,7 +1,19 @@
 .App {
   text-align: center;
+  background-color: blanchedalmond;
+  min-height: 600px;
+  
+
+
+
 }
 
+#logo{
+  color:coral
+}
+#search-button{
+  color:coral
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,8 +26,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color:blanchedalmond;
+  min-height: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +35,39 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+ .feat-card{
+  max-width: 95%;
+   
+justify-content: center;
+margin: auto;
+margin-top: 4px;
+ }
+#featured{
+  background-image: url(1.jpg);
+  background-size: 100%;
+  min-height: 150px;
+  /* display: flex;
+  flex-direction: column; */
 
+  padding: 0;
+  
+}
+.card.div{
+  display: flex;
+  
+}
+.c{
+  display: inline-block;
+  margin: 5%;
+
+}
+.c {
+  background-image: url(1.jpg);
+}
+
+a{
+  text-decoration: none;
+}
 .App-link {
   color: #61dafb;
 }
