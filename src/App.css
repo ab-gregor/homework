@@ -25,6 +25,10 @@
   }
 }
 
+.card-img-top{
+  max-height: 229px;
+}
+
 .App-header {
   background-color:blanchedalmond;
   min-height: 0px;
@@ -63,6 +67,7 @@ margin-top: 4px;
 }
 .c {
   background-image: url(1.jpg);
+  max-height: 333px;
 }
 
 a{

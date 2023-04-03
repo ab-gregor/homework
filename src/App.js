@@ -6,6 +6,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from './logo.svg';
 import Card from 'react-bootstrap/Card';
+import laptop from './Clearance_store_Desktop_CC_1x._SY304_CB628315133_.jpg'
+import watch from './PC_CategoryCard_379X304_1._SY304_CB614835787_.jpg'
+import headphone from './head.jpg'
 
 import './App.css';
 
@@ -16,7 +19,7 @@ function App() {
       <div>
       <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#"><h3 id="logo">Flipkart</h3></Navbar.Brand>
+        <Navbar.Brand href="#"><h3 id="logo">Sagar Mart</h3></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -37,7 +40,9 @@ function App() {
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#action1">Help Center</Nav.Link>
+            <Nav.Link href="#action1=6">Add Product</Nav.Link>
           </Nav>
+          
           <Form className="d-flex">
             <Form.Control
               type="search"
@@ -69,7 +74,7 @@ function App() {
     </div>
     <div className='card-div'>
     <Card style={{ width: '18rem' }} className="c">
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={laptop} />
       <Card.Body>
         <Card.Title>Laptops</Card.Title>
         
@@ -78,20 +83,17 @@ function App() {
     </Card>
 
     <Card style={{ width: '18rem' }} className="c">
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={watch} alt='Image'/>
       <Card.Body>
-        <Card.Title>Phones</Card.Title>
+        <Card.Title>Watches</Card.Title>
         
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
 
     <Card style={{ width: '18rem' }} className="c">
-      <Card.Img variant="top" src="Clearance_store_Desktop_CC_1x._SY304_CB628315133_.jpg" />
+      <Card.Img variant="top" src={headphone} alt='Image'/>
       <Card.Body>
-      <Card.Text>
-        <img src=''></img>
-        </Card.Text>
         <Card.Title>Headphones</Card.Title>
         
         <Button variant="primary">Go somewhere</Button>
