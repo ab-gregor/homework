@@ -33,7 +33,7 @@ function App() {
 
     const addProduct = async(product)=>{
 
-      const res = await fetch('http://localhost:3333/products',{
+      const res = await fetch('http://localhost:7777/products',{
         method:'POST',
         headers:{
           'Content-type': 'application/json'
