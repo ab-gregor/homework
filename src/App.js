@@ -8,7 +8,7 @@ import logo from './logo.svg';
 import Card from 'react-bootstrap/Card';
 import NavBaar from './NavBaar';
 import AddProduct from './AddProduct';
-import { useState } from 'react';
+import { useState , useEffect } from 'react';
 import Products from './Products';
 import laptop from './Clearance_store_Desktop_CC_1x._SY304_CB628315133_.jpg'
 import watch from './PC_CategoryCard_379X304_1._SY304_CB614835787_.jpg'
@@ -19,28 +19,28 @@ import './App.css';
 
 function App() {
   const [showForm, setShowForm]=useState(false)
-  const[products,setProduct]=useState([
-    {
-      id:1,
-      pname:'Turbo',
-      price: 50000,
-      img: laptop
-    },
-    {
-      id:2,
-      pname:'Smart Wax',
-      price: 500,
-      img:headphone
-    },
-    {
-      id:3,
-      pname:'BMC DiA Intake',
-      price: 9500,
-      img:watch
-    }
-    ])
+  const[products,setProduct]=useState([])
 
-    const addProduct =(product)=>{
+  useEffect (() =>{
+    const fetchProduct= async()=>{
+      const res=await fetch('http://localhost:7777/products');
+      //console.log(res);
+      const newData = await res.json()
+      setProduct(newData)
+    }
+    fetchProduct()
+  },[])
+
+    const addProduct = async(product)=>{
+
+      const res = await fetch('http://localhost:3333/products',{
+        method:'POST',
+        headers:{
+          'Content-type': 'application/json'
+    
+        },
+        body: JSON.stringify(product)
+      })
       setProduct([...products,product])
     }
   return (
