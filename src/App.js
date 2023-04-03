@@ -19,7 +19,7 @@ function App() {
       <div>
       <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#"><h3 id="logo">Sagar Mart</h3></Navbar.Brand>
+        <Navbar.Brand href="#"><h3 id="logo">SMart</h3></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -78,7 +78,7 @@ function App() {
       <Card.Body>
         <Card.Title>Laptops</Card.Title>
         
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Add to cart</Button>
       </Card.Body>
     </Card>
 
@@ -87,7 +87,7 @@ function App() {
       <Card.Body>
         <Card.Title>Watches</Card.Title>
         
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Add to cart</Button>
       </Card.Body>
     </Card>
 
@@ -96,7 +96,7 @@ function App() {
       <Card.Body>
         <Card.Title>Headphones</Card.Title>
         
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Add to cart</Button>
       </Card.Body>
     </Card>
   
